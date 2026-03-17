@@ -73,8 +73,6 @@
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0.16.10/dist/katex.min.css">
     
-      <link rel="stylesheet" href="../../../../assets/style/components/superintern.css">
-    
     <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -419,7 +417,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../../../showcase/mcp/" class="md-tabs__link">
+        <a href="../../../../showcase/identity/did/" class="md-tabs__link">
           
   
   
@@ -611,10 +609,6 @@
       
         
           
-        
-      
-        
-      
         
       
         
@@ -1079,34 +1073,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Probabilistic Finality and Economic Finality">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#economic-finality-fast-finality" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Economic Finality (Fast Finality)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#probabilistic-finality-fallback-mechanism" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Probabilistic Finality (Fallback Mechanism)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1857,8 +1823,6 @@
       
         
       
-        
-      
     
     
     
@@ -2115,70 +2079,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-  
-    <a href="../../../validator/evn/overview/" class="md-nav__link">
-      
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    EVN
-  
-
-    
-  </span>
-  
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -2339,62 +2239,6 @@
           </ul>
         </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../cross-chain-bridge/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cross Chain Bridge
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../benchmark/design-reference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Benchmark
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2596,8 +2440,6 @@
       
         
       
-        
-      
     
     
     
@@ -2622,7 +2464,7 @@
   
   
   
-    <a href="../../../../showcase/mcp/" class="md-nav__link">
+    <a href="../../../../showcase/identity/did/" class="md-nav__link">
       
   
   
@@ -2757,34 +2599,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Probabilistic Finality and Economic Finality">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#economic-finality-fast-finality" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Economic Finality (Fast Finality)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#probabilistic-finality-fallback-mechanism" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Probabilistic Finality (Fallback Mechanism)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -3073,30 +2887,8 @@
 <div><h2 id="finality-api">Finality API<a class="headerlink" href="#finality-api" title="Link to this section">¶</a></h2>
 <p>Finality is a crucial aspect of blockchain security, ensuring that once a block is confirmed, it cannot be reversed or altered. This provides users with the confidence to act on the information in the block without delay.</p>
 <h3 id="probabilistic-finality-and-economic-finality">Probabilistic Finality and Economic Finality<a class="headerlink" href="#probabilistic-finality-and-economic-finality" title="Link to this section">¶</a></h3>
-<p>BNB Smart Chain (BSC) implements a dual-layer finality mechanism combining Economic Finality and Probabilistic Finality to ensure transaction security and network efficiency.</p>
-<h4 id="economic-finality-fast-finality">Economic Finality (Fast Finality)<a class="headerlink" href="#economic-finality-fast-finality" title="Link to this section">¶</a></h4>
-<p>The Fast Finality feature, introduced through <strong><a href="https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP126.md">BEP-126</a></strong>, enables Economic Finality using a slashing mechanism similar to Casper FFG and Tendermint. Key characteristics:</p>
-<ul>
-<li>Block n achieves economic finality by block n+2</li>
-<li>Transaction finality time: <strong>~3.75 seconds</strong> (with 1.5 seconds block time)</li>
-<li>Economic penalties make block reversal extremely expensive</li>
-<li>Validators violating voting rules forfeit part of their staked assets</li>
-</ul>
-<p>This significantly improves user experience through faster and more reliable transaction confirmations.</p>
-<h4 id="probabilistic-finality-fallback-mechanism">Probabilistic Finality (Fallback Mechanism)<a class="headerlink" href="#probabilistic-finality-fallback-mechanism" title="Link to this section">¶</a></h4>
-<p>When Fast Finality is unavailable, BSC falls back to Probabilistic Finality. Security increases as more blocks are added - the deeper a block is buried, the lower the probability of reversal.</p>
-<p>Network Parameters:</p>
-<ul>
-<li>TurnLength: 8 (consecutive blocks per validator)</li>
-<li>ValidatorSize: 21 (total active validators)</li>
-<li>Block Time: ~1.5 seconds</li>
-</ul>
-<p>Finality Requirements:</p>
-<ul>
-<li>Majority (&gt;½) validator confirmations: 88 blocks (11 × 8) ≈ 132 seconds</li>
-<li>Supermajority (&gt;⅔) validator confirmations: 120 blocks (15 × 8) ≈ 180 seconds</li>
-</ul>
-<p>This dual-layer approach ensures network security and finality guarantees even when Fast Finality encounters issues.</p>
+<p>In probabilistic finality, the deeper a block is buried in the chain, the lower the likelihood of it being reverted. The more blocks follow a particular block, the more likely the chain containing that block will be the longest. <strong>Typically, BSC users should wait for at least 11 or 15 different validators to seal a block. If validators are allowed to produce multiple consecutive blocks, the number of blocks required to achieve probabilistic finality is approximately 11*n or 15*n, where “n” is the number of consecutive blocks produced.</strong></p>
+<p>Economic Finality refers to the high cost associated with reverting a block. In proof-of-stake systems that use a slashing mechanism (such as Casper FFG, Tendermint, or BSC Fast Finality), if validators violate the voting rules, part or all of their stake can be forfeited. This economic penalty makes it extremely expensive to undermine finality. Generally, block n achieves economic finality by block n+2, meaning that BSC Fast Finality reduces the confirmation time to two blocks in most cases. This improves the user experience by making transaction confirmation faster and more reliable.</p>
 <h3 id="economic-finality-api">Economic Finality API<a class="headerlink" href="#economic-finality-api" title="Link to this section">¶</a></h3>
 <h3 id="eth_getheaderbynumber-as-in-the-ethereum-client"><a href="https://www.quicknode.com/docs/kaia/eth_getHeaderByNumber">eth_getHeaderByNumber</a> as in the Ethereum client.<a class="headerlink" href="#eth_getheaderbynumber-as-in-the-ethereum-client" title="Link to this section">¶</a></h3>
 <p><strong>Parameters</strong></p>
@@ -3146,8 +2938,6 @@ This will return block hashes:
 <li><code>-3</code> represents at least <code>len(currentValidators)</code></li>
 </ul>
 </li>
-<li>Using <code>-1</code>, <code>-2</code>, or <code>-3</code> provides a convenient way to select the desired security level according to your application and the corresponding waiting time. When one of these values is used as the parameter, the returned block is increasingly less likely to be reverted. <strong>Historically, blocks returned by <code>eth_getFinalizedHeader</code> with <code>-1</code>, <code>-2</code>, or <code>-3</code> on BSC have never been reverted.</strong></li>
-<li>If the highest security level is required, you can choose <code>-3</code>.</li>
 <li>This function calculates <code>probabilisticFinalizedHeight</code> as the highest height of the block verified by <code>verifiedValidatorNum</code> validators and then returns the block header with a height equal to <code>max(fastFinalizedHeight, probabilisticFinalizedHeight)</code>.</li>
 <li>The height of the returned block header is guaranteed to increase monotonically.
 For example:
@@ -3162,8 +2952,6 @@ For example:
 <li><code>-3</code> represents at least <code>len(currentValidators)</code></li>
 </ul>
 </li>
-<li>Using <code>-1</code>, <code>-2</code>, or <code>-3</code> provides a convenient way to select the desired security level according to your application and the corresponding waiting time. When one of these values is used as the parameter, the returned block is increasingly less likely to be reverted. <strong>Historically, blocks returned by <code>eth_getFinalizedHeader</code> with <code>-1</code>, <code>-2</code>, or <code>-3</code> on BSC have never been reverted.</strong></li>
-<li>If the highest security level is required, you can choose <code>-3</code>.</li>
 <li>This function calculates <code>probabilisticFinalizedHeight</code> as the highest height of the block verified by <code>verifiedValidatorNum</code> validators and then returns the block header with a height equal to <code>max(fastFinalizedHeight, probabilisticFinalizedHeight)</code>.</li>
 <li>If <code>fullTx</code> is true, the block includes all transactions; otherwise, only transaction hashes are included.</li>
 <li>The height of the returned block is guaranteed to be monotonically increasing.
@@ -3273,25 +3061,104 @@ curl -X POST "http://localhost:8545/" -H "Content-Type: application/json"  --dat
         
       </main>
       
-<footer>
-  <div class="doc-footer">
-      <div class="doc-footer__inner md-grid">
-          <!-- Footer menu content will be dynamically inserted here -->
-      </div>
-  </div>
-  <div class="doc-copyright">
-      <div class="doc-copyright__inner md-grid">
-        <!-- Copyright content will be dynamically inserted here -->
-      </div>
+<footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../json-rpc-endpoint/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Json Rpc Endpoint">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Json Rpc Endpoint
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../faucet/" class="md-footer__link md-footer__link--next" aria-label="Next: Faucet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Faucet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
   </div>
 </footer>
-<div class="ai-bot-wrapper">
-    <button type="button" class="ask-ai-button" aria-label="Open AI Chat">
-        Ask AI
-        <svg viewBox="0 0 24 25" aria-hidden="true">
-            <path d="M10.5 6.58644L10.9459 7.82537C11.1908 8.5045 11.5824 9.12128 12.0929 9.63177C12.6034 10.1423 13.2202 10.5339 13.8993 10.7788L15.1383 11.2247C15.2501 11.2648 15.2501 11.4232 15.1383 11.4634L13.8992 11.9093C13.2201 12.1542 12.6033 12.5459 12.0929 13.0563C11.5824 13.5668 11.1908 14.1836 10.9459 14.8627L10.5 16.1016C10.4597 16.2135 10.3015 16.2135 10.2611 16.1016L9.81524 14.8627C9.57032 14.1836 9.17867 13.5669 8.66818 13.0564C8.1577 12.546 7.54093 12.1543 6.86182 11.9095L5.62306 11.4636C5.51106 11.4234 5.51106 11.265 5.62306 11.2248L6.86182 10.779C7.54095 10.5341 8.15773 10.1424 8.66821 9.63195C9.1787 9.12146 9.57034 8.50468 9.81524 7.82555L10.2611 6.58662C10.2699 6.56193 10.286 6.54056 10.3074 6.52545C10.3288 6.51034 10.3544 6.50222 10.3806 6.50222C10.4068 6.50222 10.4323 6.51034 10.4537 6.52545C10.4751 6.54056 10.4913 6.56193 10.5 6.58662V6.58644ZM16.0771 3.60937L16.3034 4.23657C16.5548 4.93239 17.1027 5.48102 17.7992 5.73239L18.4264 5.9587C18.439 5.96307 18.4499 5.97124 18.4576 5.98207C18.4653 5.9929 18.4694 6.00586 18.4694 6.01915C18.4694 6.03244 18.4653 6.0454 18.4576 6.05623C18.4499 6.06706 18.439 6.07523 18.4264 6.07959L17.7991 6.3059C17.4552 6.43009 17.1429 6.6285 16.8844 6.88703C16.6258 7.14555 16.4274 7.45785 16.3032 7.80173L16.0769 8.42875C16.0726 8.4413 16.0644 8.45218 16.0536 8.45988C16.0427 8.46758 16.0298 8.47171 16.0165 8.47171C16.0032 8.47171 15.9902 8.46758 15.9794 8.45988C15.9686 8.45218 15.9604 8.4413 15.956 8.42875L15.7297 7.80173C15.6055 7.45785 15.4071 7.14555 15.1486 6.88703C14.8901 6.6285 14.5778 6.43009 14.2339 6.3059L13.6069 6.07959C13.5943 6.07523 13.5835 6.06706 13.5758 6.05623C13.5681 6.0454 13.5639 6.03244 13.5639 6.01915C13.5639 6.00586 13.5681 5.9929 13.5758 5.98207C13.5835 5.97124 13.5943 5.96307 13.6069 5.9587L14.2339 5.73239C14.9297 5.48084 15.4784 4.93293 15.7297 4.23639L15.956 3.60937C15.9604 3.59682 15.9686 3.58594 15.9794 3.57824C15.9902 3.57054 16.0032 3.56641 16.0165 3.56641C16.0298 3.56641 16.0427 3.57054 16.0536 3.57824C16.0644 3.58594 16.0726 3.59682 16.0769 3.60937H16.0771ZM16.0771 14.2607L16.3034 14.8878C16.5548 15.5836 17.1027 16.1322 17.7992 16.3836L18.4264 16.6101C18.439 16.6144 18.4499 16.6226 18.4576 16.6334C18.4653 16.6443 18.4694 16.6572 18.4694 16.6705C18.4694 16.6838 18.4653 16.6968 18.4576 16.7076C18.4499 16.7184 18.439 16.7266 18.4264 16.731L17.7991 16.9571C17.4552 17.0813 17.1429 17.2797 16.8844 17.5382C16.6258 17.7968 16.4274 18.1091 16.3032 18.4529L16.0769 19.0799C16.0726 19.0925 16.0644 19.1034 16.0536 19.1111C16.0427 19.1188 16.0298 19.1229 16.0165 19.1229C16.0032 19.1229 15.9902 19.1188 15.9794 19.1111C15.9686 19.1034 15.9604 19.0925 15.956 19.0799L15.7297 18.4529C15.6055 18.1091 15.4071 17.7968 15.1486 17.5382C14.8901 17.2797 14.5778 17.0813 14.2339 16.9571L13.6071 16.7308C13.5945 16.7264 13.5836 16.7183 13.5759 16.7074C13.5682 16.6966 13.5641 16.6836 13.5641 16.6703C13.5641 16.6571 13.5682 16.6441 13.5759 16.6333C13.5836 16.6224 13.5945 16.6143 13.6071 16.6099L14.2341 16.3836C14.9299 16.1322 15.4785 15.5843 15.7299 14.8878L15.9562 14.2607C15.9606 14.2482 15.9688 14.2373 15.9796 14.2296C15.9904 14.2219 16.0034 14.2178 16.0167 14.2178C16.03 14.2178 16.0429 14.2219 16.0537 14.2296C16.0646 14.2373 16.0727 14.2482 16.0771 14.2607Z" fill="currentColor"/>
-        </svg>
-    </button>
+<div class="doc-footer">
+    <div class="doc-footer__inner md-grid">
+        <div>
+            <div>Explore</div>
+            <ul>
+                <li><a href="https://trustwallet.com/" target="_blank">Trust Wallet</a></li>
+                <li><a href="https://www.bnbchain.org/en/binance-wallet" target="_blank">BNB Chain Wallet</a></li>
+                <li><a href="https://dappbay.bnbchain.org/" target="_blank">DappBay</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>Build</div>
+            <ul>
+                <li><a href="https://github.com/bnb-chain/whitepaper" target="_blank">Whitepaper</a></li>
+                <li><a href="https://forum.bnbchain.org/" target="_blank">Build N' Build Forum</a></li>
+                <li><a href="https://www.bnbchain.org/en/bnb-chain-bridges" target="_blank">Bridges</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>Participate</div>
+            <ul>
+                <li><a href="https://www.bnbchain.org/en/events" target="_blank">Events</a></li>
+                <li><a href="https://www.bnbchain.org/en/bsc-mvb-program" target="_blank">MVB Program</a></li>
+                <li><a href="https://www.bnbchain.org/en/hackathon" target="_blank">Hackathon</a></li>
+                <li><a href="https://www.bnbchain.org/en/developers/developer-programs" target="_blank">Developer
+                    Programs</a></li>
+                <li><a href="https://www.bnbchain.org/en/martians-program" target="_blank">Martians Program</a></li>
+                <li><a href="https://bugbounty.bnbchain.org" target="_blank">Bug Bounty</a></li>
+            </ul>
+        </div>
+        <div>
+            <div>About</div>
+            <ul>
+                <li><a href="https://www.bnbchain.org/en/privacy-policy" target="_blank">Privacy Policy</a></li>
+                <li><a href="https://www.bnbchain.org/en/terms" target="_blank">Terms of Use</a></li>
+                <li><a href="https://jobs.bnbchain.org/companies/bnb-chain#content" target="_blank">Careers</a></li>
+                <li><a href="https://www.bnbchain.org/en/official-verification" target="_blank">Verification</a></li>
+                <li><a href="https://www.bnbchain.org/en/contact" target="_blank">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="doc-copyright">
+    <div class="doc-copyright__inner md-grid">
+        © 2024 Bnbchain.org. All rights reserved.
+    </div>
 </div>
 
     </div>
@@ -3381,22 +3248,20 @@ curl -X POST "http://localhost:8545/" -H "Content-Type: application/json"  --dat
       <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.instant", "navigation.tracking", "navigation.integration", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.sections", "navigation.prune", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "content.code.copy", "content.action.edit", "content.tooltips"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-
       <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="../../../../assets/js/mathjax.js"></script>
       
         <script src="../../../../assets/js/custom.js"></script>
       
-        <script src="../../../../assets/js/superintern.js"></script>
+        <script src="../../../../assets/js/inkeep-button.js"></script>
       
-        <script src="../../../../assets/js/footer-menu.js"></script>
+        <script src="https://unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+      
+        <script src="https://unpkg.com/katex@0.16.10/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0.16.10/dist/contrib/auto-render.min.js"></script>
       
     
-<script src="https://unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha384-Wuix6BuhrWbjDBs24bXrjf4ZQ5aFeFWBuKkFekO2t8xFU0iNaLQfp2K6/1Nxveei" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/katex@0.16.10/dist/katex.min.js" integrity="sha384-hIoBPJpTUs74ddyc4bFZSM1TVlQDA60VBbJS0oA934VSz82sBx1X7kSx2ATBDIyd" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/katex@0.16.10/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
-<script src="https://cdn.superintern.ai/sdk/embed.global.js" crossorigin="anonymous"></script>
-
   </body>
 </html>
